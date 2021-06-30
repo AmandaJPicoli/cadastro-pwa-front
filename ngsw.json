@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1625081880567,
+  "timestamp": 1625087640527,
   "index": "/cadastro-pwa-front/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/cadastro-pwa-front/favicon.ico",
         "/cadastro-pwa-front/index.html",
-        "/cadastro-pwa-front/main.8f0502e6dfc15d5dbc4d.js",
+        "/cadastro-pwa-front/main.d40a0e0b2d82c4fa70dd.js",
         "/cadastro-pwa-front/manifest.webmanifest",
         "/cadastro-pwa-front/polyfills.f1934a51c89232109b5a.js",
         "/cadastro-pwa-front/runtime.ebd8c3e2d7d52822ca55.js",
@@ -46,9 +46,9 @@
       "name": "car-api",
       "patterns": [
         "https:\\/\\/www\\.carqueryapi\\.com\\/api\\/0\\.3\\/[^/]*",
-        "http:\\/\\/localhost:9000\\/[^/]*"
+        "https:\\/\\/cadastro-b-pwa\\.herokuapp\\.com\\/[^/]*"
       ],
-      "strategy": "performance",
+      "strategy": "freshness",
       "maxSize": 10000,
       "maxAge": 36000000,
       "timeoutMs": 5000,
@@ -68,8 +68,8 @@
     "/cadastro-pwa-front/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/cadastro-pwa-front/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/cadastro-pwa-front/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/cadastro-pwa-front/index.html": "6206fed883fdf89e2e300becffa295450fb65518",
-    "/cadastro-pwa-front/main.8f0502e6dfc15d5dbc4d.js": "a17bc5fa9e9b1857dd4696f8710ac201c26f0129",
+    "/cadastro-pwa-front/index.html": "180952eb7029b76f5d0054f78163ddc027d408ae",
+    "/cadastro-pwa-front/main.d40a0e0b2d82c4fa70dd.js": "28b7ba9dbc5f71fdfa8137ec4cb46a83847fdb63",
     "/cadastro-pwa-front/manifest.webmanifest": "e020b5c12992ca121994eb0008cea08bcb5d63fa",
     "/cadastro-pwa-front/polyfills.f1934a51c89232109b5a.js": "0d5bc45ecb57cc8aa78bb208e16ec5e425983046",
     "/cadastro-pwa-front/runtime.ebd8c3e2d7d52822ca55.js": "147c8ad8b7268933c859d7b7639ca845b667fe36",
