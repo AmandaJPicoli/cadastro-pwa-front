@@ -86,7 +86,7 @@ export abstract class BaseService<T extends { id: string }> {
   }
 
   addPushSubscriber(sub: any) {
-    return this.http.post('/api/notifications', sub);
+    return this.http.post(this.urlApi, sub);
   }
 
 }

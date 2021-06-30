@@ -14,7 +14,6 @@ export class OnlineOfflineService {
    }
 
    get isOnline(): boolean{
-     console.log(window.navigator.onLine)
      return window.navigator.onLine;
    }
 

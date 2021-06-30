@@ -5,6 +5,7 @@ import { MarcaCarro } from 'src/app/models/MarcaCarro';
 import { Observable } from 'rxjs';
 import { MarcaCarroService } from 'src/app/services/marca-carro.service';
 import { SegurosService } from 'src/app/services/seguros.service';
+import { NotificationService } from 'src/app/services/notification/notification.service';
 
 @Component({
   selector: 'app-cadastro-seguro',
@@ -23,7 +24,8 @@ export class CadastroSeguroComponent implements OnInit {
   constructor(
     private marcaCarroService: MarcaCarroService,
     private swPush: SwPush,
-    private seguroService: SegurosService
+    private seguroService: SegurosService,
+    private notificacaoService: NotificationService
   ) { }
 
   ngOnInit(): void {
@@ -48,7 +50,7 @@ export class CadastroSeguroComponent implements OnInit {
 
         console.log("Notification Subscription: ", sub);
 
-        this.seguroService.addPushSubscriber(sub).subscribe(
+        this.notificacaoService.addPushSubscriber(sub).subscribe(
           () => console.log('Sent push subscription object to server.'),
           err => console.log('Could not send subscription object to server, reason: ', err)
         );
