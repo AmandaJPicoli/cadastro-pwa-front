@@ -17,6 +17,7 @@ export class ListarSegurosComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.seguroService.ouvirStatusConexao();
     this.seguros$ = this.seguroService.listar();
   }
 

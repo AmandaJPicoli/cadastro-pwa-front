@@ -30,6 +30,11 @@ export class CadastroSeguroComponent implements OnInit {
 
   ngOnInit(): void {
     this.marcasCarro$ = this.marcaCarroService.getMarcas();
+    this.seguroService.ouvirStatusConexao();
+  }
+
+  ngOnChanges(): void {
+    this.seguroService.ouvirStatusConexao();
   }
 
   adicionar() {

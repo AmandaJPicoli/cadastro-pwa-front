@@ -11,7 +11,7 @@ export class NotificationService extends BaseService<Notificacao> {
     protected injector: Injector
   ) {
    
-    super(`https://cadastro-b-pwa.herokuapp.com/api/notifications`, 'Notification', injector);
+    super(`https://cadastro-b-pwa.herokuapp.com/api/notifications`, 'USER_SUBSCRIPTIONS', injector);
   }
 
 }
