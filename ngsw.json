@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1625032776475,
-  "index": "/index.html",
+  "timestamp": 1625033128792,
+  "index": "/cadastro-pwa-front/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/favicon.ico",
-        "/index.html",
-        "/main.94c361d785c898ceffbd.js",
-        "/manifest.webmanifest",
-        "/polyfills.f1934a51c89232109b5a.js",
-        "/runtime.ebd8c3e2d7d52822ca55.js",
-        "/styles.31d6cfe0d16ae931b73c.css"
+        "/cadastro-pwa-front/favicon.ico",
+        "/cadastro-pwa-front/index.html",
+        "/cadastro-pwa-front/main.94c361d785c898ceffbd.js",
+        "/cadastro-pwa-front/manifest.webmanifest",
+        "/cadastro-pwa-front/polyfills.f1934a51c89232109b5a.js",
+        "/cadastro-pwa-front/runtime.ebd8c3e2d7d52822ca55.js",
+        "/cadastro-pwa-front/styles.31d6cfe0d16ae931b73c.css"
       ],
       "patterns": []
     },
@@ -29,14 +29,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/icons/icon-128x128.png",
-        "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
-        "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
-        "/assets/icons/icon-512x512.png",
-        "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "/cadastro-pwa-front/assets/icons/icon-128x128.png",
+        "/cadastro-pwa-front/assets/icons/icon-144x144.png",
+        "/cadastro-pwa-front/assets/icons/icon-152x152.png",
+        "/cadastro-pwa-front/assets/icons/icon-192x192.png",
+        "/cadastro-pwa-front/assets/icons/icon-384x384.png",
+        "/cadastro-pwa-front/assets/icons/icon-512x512.png",
+        "/cadastro-pwa-front/assets/icons/icon-72x72.png",
+        "/cadastro-pwa-front/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
@@ -59,21 +59,21 @@
     }
   ],
   "hashTable": {
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "d346ec2b4b09ee9473e2b54ee9856cae5e8d5271",
-    "/main.94c361d785c898ceffbd.js": "7d561c13f1dba4933903a6a61f02968fd10daaa2",
-    "/manifest.webmanifest": "e020b5c12992ca121994eb0008cea08bcb5d63fa",
-    "/polyfills.f1934a51c89232109b5a.js": "0d5bc45ecb57cc8aa78bb208e16ec5e425983046",
-    "/runtime.ebd8c3e2d7d52822ca55.js": "147c8ad8b7268933c859d7b7639ca845b667fe36",
-    "/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/cadastro-pwa-front/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/cadastro-pwa-front/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/cadastro-pwa-front/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/cadastro-pwa-front/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/cadastro-pwa-front/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/cadastro-pwa-front/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/cadastro-pwa-front/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/cadastro-pwa-front/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/cadastro-pwa-front/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/cadastro-pwa-front/index.html": "a400339c48461cedbfd05b7315e7103b666e6ccc",
+    "/cadastro-pwa-front/main.94c361d785c898ceffbd.js": "7d561c13f1dba4933903a6a61f02968fd10daaa2",
+    "/cadastro-pwa-front/manifest.webmanifest": "e020b5c12992ca121994eb0008cea08bcb5d63fa",
+    "/cadastro-pwa-front/polyfills.f1934a51c89232109b5a.js": "0d5bc45ecb57cc8aa78bb208e16ec5e425983046",
+    "/cadastro-pwa-front/runtime.ebd8c3e2d7d52822ca55.js": "147c8ad8b7268933c859d7b7639ca845b667fe36",
+    "/cadastro-pwa-front/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
