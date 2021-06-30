@@ -31,10 +31,10 @@
       "name": "car-api",
       "urls": [
         "https://www.carqueryapi.com/api/0.3/*",
-        "http://localhost:9000/*"
+        "https://cadastro-b-pwa.herokuapp.com/*"
       ],
       "cacheConfig": {
-        "strategy": "performance",
+        "strategy": "freshness",
         "maxSize": 10000,
         "maxAge": "10h",
         "timeout": "5s"

@@ -14,7 +14,8 @@ export class OnlineOfflineService {
    }
 
    get isOnline(): boolean{
-     return !window.navigator.onLine;
+     console.log(window.navigator.onLine)
+     return window.navigator.onLine;
    }
 
    get statusConexao(): Observable<boolean> {

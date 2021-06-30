@@ -13,7 +13,7 @@ export class SegurosService extends BaseService<Seguro> {
     protected injector: Injector
   ) {
    
-    super(`${environment.API_SEGUROS}`, 'seguros', injector);
+    super(`https://cadastro-b-pwa.herokuapp.com/api/seguros`, 'Seguro', injector);
   }
 
 }

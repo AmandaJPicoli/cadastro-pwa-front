@@ -108,7 +108,9 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "/cadastro-pwa-front/"
+          }
         }
       }
     }

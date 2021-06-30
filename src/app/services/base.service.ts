@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { stringify } from '@angular/compiler/src/util';
 import { Inject, Injectable, Injector } from '@angular/core';
 import Dexie from 'dexie';
 import { Observable } from 'rxjs';
@@ -7,10 +8,10 @@ import { OnlineOfflineService } from './online-offline.service';
 @Injectable({
   providedIn: 'root'
 })
-export abstract class BaseService<T extends {id: string}> {
+export abstract class BaseService<T extends { id: string }> {
 
   private db: Dexie | undefined;
-  private table: any;
+  private table!: Dexie.Table<T, any>;
 
   protected http: HttpClient;
   protected onlineOfflineService: OnlineOfflineService;
@@ -19,7 +20,7 @@ export abstract class BaseService<T extends {id: string}> {
     @Inject(String) protected urlApi: string,
     @Inject(String) protected nomeTabela: string,
     protected injector: Injector
-  ) { 
+  ) {
     this.http = this.injector.get(HttpClient);
     this.onlineOfflineService = this.injector.get(OnlineOfflineService);
   }
@@ -35,13 +36,14 @@ export abstract class BaseService<T extends {id: string}> {
   private cadastrar(tabela: T) {
     this.http.post(this.urlApi, tabela)
       .subscribe(
-        () => alert('tabela foi cadastrado com sucesso'),
-        (err) => console.log('Erro ao cadastrar tabela.')
+        () => alert('Cadastro realizado com sucesso'),
+        (err) => console.log('Erro ao cadastrar. Tente novamente')
       );
   }
 
   private async salvarIndexedDb(tabela: T) {
     try {
+      this.iniciarIndexedDb()
       await this.table.add(tabela);
       const todostabelas: T[] = await this.table.toArray();
       console.log('Salvo no IndexedDB.');
@@ -76,10 +78,15 @@ export abstract class BaseService<T extends {id: string}> {
     this.onlineOfflineService.statusConexao
       .subscribe(online => {
         if (online) {
-         this.enviarIndexedDbParaApi();
+          this.enviarIndexedDbParaApi();
         } else {
           console.log('Estou offline');
         }
       })
   }
+
+  addPushSubscriber(sub: any) {
+    return this.http.post('/api/notifications', sub);
+  }
+
 }
